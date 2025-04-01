@@ -62,7 +62,7 @@ when isMainModule:
     buffer.commit(4)
     try:
        reserved = buffer.reserve(1)
-    except:
+    except Exception:
       flag = true
     
     doAssert flag
